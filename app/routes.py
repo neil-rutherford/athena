@@ -4,6 +4,10 @@ from app.db_utils import db_create, db_read, db_purge
 import datetime
 import json
 
+@app.route('/test')
+def test():
+    return "yuh"
+
 @app.route('/c', methods=['POST'])
 def c():
     if request.method == 'POST':
